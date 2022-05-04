@@ -1,0 +1,388 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>SpringConf</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <header class="site-header">
+        <div class="hero">
+            <div class="contenido-header">
+                <nav class="redes-sociales">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </nav>
+                <div class="informacion-evento">
+                    <div class="clearfix">
+                        <p class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> 10 12 Dic</p>
+                        <p class="ciudad"><i class="fa fa-map-marker" aria-hidden="true"></i> Springfield</p>
+                    </div>
+                    <h1 class="nombre-sitio">SpringConf</h1>
+                    <p class="slogan">La mejor serie de <span>la Historia</span></p>
+                </div>
+                <!--.informacion-evento-->
+
+            </div>
+        </div>
+        <!--.hero-->
+    </header>
+
+    <div class="barra">
+        <div class="contenedor clearfix">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logotipo evento">
+            </div>
+            <div class="menu-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navegacion-principal clearfix">
+                <a href="conferencia.html">Conferencias</a>
+                <a href="#">Calendario</a>
+                <a href="#">Invitados</a>
+                <a href="#">Reservas</a>
+            </nav>
+        </div>
+        <!--.contenedor-->
+    </div>
+    <!--.barra-->
+
+    <section class="seccion contenedor">
+        <h2>El mayor encuentro de sabiduría simpsoniana</h2>
+        <p>Toda la sabiduría de los personajes de Los Simpsons, al alcance de la mano. Los mejores expositores, cada uno el mejor en su área. Contaremos con una gran variedad de temáticas, realmente imperdible!</p>
+    </section>
+    <!--.seccion-->
+
+    <section class="programa">
+        <div class="contenedor-video">
+            <video autoplay loop poster="img/bg-talleres.jpg">
+                <source src="video/video.mp4" type="video/mp4">
+                <source src="video/video.webm" type="video/webm">
+                <source src="video/video.ogv" type="video/ogv">
+            </video>
+        </div>
+        <!--contenedor-video-->
+        <div class="contenido-programa">
+            <div class="contenedor">
+                <div class="programa-evento">
+                    <h2>Programa del evento</h2>
+                    <nav class="menu-programa">
+                        <a href="#talleres"><i class="fa fa-code" aria-hidden="true"></i>Talleres</a>
+                        <a href="#conferencias"><i class="fa fa-comment" aria-hidden="true"></i>Conferencias</a>
+                        <a href="#seminarios"><i class="fa fa-university" aria-hidden="true"></i>Seminarios</a>
+                    </nav>
+
+                    <div id="talleres" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>Como comer una Naranja</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>16:00 hs</p>
+                            <p><i class="fa fa-calendar" aria-hidden="true"></i>10 de Diciembre</p>
+                            <p><i class="fa fa-user" aria-hidden="true"></i>Juan Casimiro Topo</p>
+                        </div>
+                        <div class="detalle-evento">
+                            <h3>Baile funky defensa personal</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>20:00 hs</p>
+                            <p><i class="fa fa-calendar" aria-hidden="true"></i>10 de Diciembre</p>
+                            <p><i class="fa fa-user" aria-hidden="true"></i>Moe Szyslak</p>
+                        </div>
+                        <a href="#" class="button float-right">Ver Todos</a>
+                    </div>
+                    <!--#talleres-->
+                    <div id="conferencias" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>Cocina de hamburgejas al vapor</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>10:00 hs</p>
+                            <p><i class="fa fa-calendar" aria-hidden="true"></i>10 de Diciembre</p>
+                            <p><i class="fa fa-user" aria-hidden="true"></i>Seymour Skinner</p>
+                        </div>
+                        <div class="detalle-evento">
+                            <h3>El empresario y la sensibilidad social</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>17:00 hs</p>
+                            <p><i class="fa fa-calendar" aria-hidden="true"></i>10 de Diciembre</p>
+                            <p><i class="fa fa-user" aria-hidden="true"></i>Montgomery Burns</p>
+                        </div>
+                        <a href="#" class="button float-right">Ver Todos</a>
+                    </div>
+                    <!--#conferencias-->
+                    <div id="seminarios" class="info-curso ocultar clearfix">
+                        <div class="detalle-evento">
+                            <h3>Francés en una mañana</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>10:00 hs</p>
+                            <p><i class="fa fa-calendar" aria-hidden="true"></i>11 de Diciembre</p>
+                            <p><i class="fa fa-user" aria-hidden="true"></i>William McDougal</p>
+                        </div>
+                        <div class="detalle-evento">
+                            <h3>Paternidad responsable</h3>
+                            <p><i class="fa fa-clock-o" aria-hidden="true"></i>16:00 hs</p>
+                            <p><i class="fa fa-calendar" aria-hidden="true"></i>11 de Diciembre</p>
+                            <p><i class="fa fa-user" aria-hidden="true"></i>Homero Simpson</p>
+                        </div>
+                        <a href="#" class="button float-right">Ver Todos</a>
+                    </div>
+                    <!--#seminarios-->
+
+                </div>
+                <!--.programa-evento-->
+            </div>
+            <!--.contenedor-->
+        </div>
+        <!--.contenido-programa-->
+    </section>
+    <!--.programa-->
+
+    <section class="invitados contenedor seccion">
+        <h2>Nuestros Invitados</h2>
+        <ul class="lista-invitados clearfix">
+            <li>
+                <div class="invitado">
+                    <img src="img/juantopo.jpg" alt="Juan Topo">
+                    <p>Hans Moleman</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="img/moeszyslak.jpg" alt="Moe Szyslak|">
+                    <p>Moe Szyslak</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="img/auroraboreal.jpg" alt="Skinner">
+                    <p>Seymour Skinner</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="img/burns.jpg" alt="Mr Burns">
+                    <p>Montgomery Burns</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="img/willy.jpg" alt="Willy el escocés">
+                    <p>William McDougal</p>
+                </div>
+            </li>
+            <li>
+                <div class="invitado">
+                    <img src="img/homero.jpg" alt="Homero Simpson">
+                    <p>Homero Simpson</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <div class="contador parallax">
+        <div class="contenedor">
+            <ul class="resumen-evento clearfix">
+                <li>
+                    <p class="numero"></p>Invitados
+                </li>
+                <li>
+                    <p class="numero"></p>Talleres
+                </li>
+                <li>
+                    <p class="numero"></p>Días
+                </li>
+                <li>
+                    <p class="numero"></p>Conferencias
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!--.contador parallax-->
+
+    <section class="precios seccion">
+        <h2>Precios</h2>
+        <div class="contenedor">
+            <ul class="lista-precios clearfix">
+                <li>
+                    <div class="tabla-precio">
+                        <h3>Pase por día</h3>
+                        <p class="numero">$500</p>
+                        <ul>
+                            <li> Doughnuts Gratis</li>
+                            <li> Todas las Conferencias</li>
+                            <li> Todos los talleres</li>
+                        </ul>
+                        <a href="#" class="button hollow">Comprar</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tabla-precio">
+                        <h3>Todos los días</h3>
+                        <p class="numero">$1000</p>
+                        <ul>
+                            <li> Doughnuts Gratis</li>
+                            <li> Todas las Conferencias</li>
+                            <li> Todos los talleres</li>
+                        </ul>
+                        <a href="#" class="button">Comprar</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="tabla-precio">
+                        <h3>Pase por dos días</h3>
+                        <p class="numero">$800</p>
+                        <ul>
+                            <li> Doughnuts Gratis</li>
+                            <li> Todas las Conferencias</li>
+                            <li> Todos los talleres</li>
+                        </ul>
+                        <a href="#" class="button hollow">Comprar</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="mapa" id="mapa">
+    </div>
+
+    <section class="seccion">
+        <h2>Testimoniales</h2>
+        <div class="testimoniales contenedor clearfix">
+            <div class="testimonial">
+                <blockquote>
+                    <p>Hola soy el señor Bolainas, y vengo de... eh un lugar muy lejano...sí eso es, en fin yo digo que gastemos el dinero en la Planta Nuclear</p>
+                    <footer class="info-testimonial clearfix">
+                        <img src="img/bolainas.jpg" alt="Señor Bolainas">
+                        <cite>Mr Snrub <span>Personaje alternativo</span></cite>
+                    </footer>
+                </blockquote>
+            </div>
+            <!--.testimonial-->
+            <div class="testimonial">
+                <blockquote>
+                    <p>Mi vieja mula ya no es lo que era, ya no es lo que era. Mi vieja mula ya no es lo que era, ya no es lo que era. </p>
+                    <footer class="info-testimonial clearfix">
+                        <img src="img/viejamula.jpg" alt="Old Jewish Man">
+                        <cite>Old Jewish Man <span>Personaje sin nombre definido</span></cite>
+                    </footer>
+                </blockquote>
+            </div>
+            <!--.testimonial-->
+            <div class="testimonial">
+                <blockquote>
+                    <p>Bien, ya cumplí mi misión aquí. Oh, un eclipse solar, el ballet cósmico ha empezado. ¿Que no hice nada? Ah, no...</p>
+                    <footer class="info-testimonial clearfix">
+                        <img src="img/leonard.jpg" alt="Leonard Nimoy">
+                        <cite>Leonard Nimoy <span>Homenaje al actor</span></cite>
+                    </footer>
+                </blockquote>
+            </div>
+            <!--.testimonial-->
+        </div>
+    </section>
+
+    <div class="newsletter parallax">
+        <div class="contenido contenedor">
+            <p>Regístrate al Newsletter:</p>
+            <h3>SpringConf</h3>
+            <a href="#" class="button transparente">Registro</a>
+        </div>
+        <!--.contenido-->
+    </div>
+    <!--.newsletter-->
+
+    <section class="seccion">
+        <h2>Faltan</h2>
+        <div class="cuenta-regresiva contenedor">
+            <ul class="clearfix">
+                <li>
+                    <p class="numero" id="dias"></p>días</li>
+                <li>
+                    <p class="numero" id="horas"></p>horas</li>
+                <li>
+                    <p class="numero" id="minutos"></p>minutos</li>
+                <li>
+                    <p class="numero" id="segundos"></p>segundos
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="contenedor clearfix">
+            <div class="footer-informacion">
+                <h3>Sobre <span>SpringConf</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum facilis nisi aut sapiente possimus reiciendis adipisci autem officia consectetur quidem? Molestiae reprehenderit quod dolore facilis praesentium illo enim totam eius.</p>
+            </div>
+            <div class="ultimos-tweets">
+                <h3>Ultimos <span>Tweets</span></h3>
+                <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, perferendis cumque a voluptas eum voluptatem qui sunt autem dolor enim perspiciatis laboriosam</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, perferendis cumque a voluptas eum voluptatem qui sunt autem dolor enim perspiciatis laboriosam</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, perferendis cumque a voluptas eum voluptatem qui sunt autem dolor enim perspiciatis laboriosam</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>Redes <span>Sociales</span></h3>
+                <nav class="redes-sociales">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados SpringConf 2021 &copy</p>
+    </footer>
+
+
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+    </script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.lettering.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

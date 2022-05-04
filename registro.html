@@ -1,0 +1,427 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>SpringConf</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald|PT+Sans" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+    <header class="site-header">
+        <div class="hero">
+            <div class="contenido-header">
+                <nav class="redes-sociales">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </nav>
+                <div class="informacion-evento">
+                    <div class="clearfix">
+                        <p class="fecha"><i class="fa fa-calendar" aria-hidden="true"></i> 10 12 Dic</p>
+                        <p class="ciudad"><i class="fa fa-map-marker" aria-hidden="true"></i> Springfield</p>
+                    </div>
+                    <h1 class="nombre-sitio">SpringConf</h1>
+                    <p class="slogan">La mejor serie de <span>la Historia</span></p>
+                </div>
+                <!--.informacion-evento-->
+
+            </div>
+        </div>
+        <!--.hero-->
+    </header>
+    <div class="barra">
+        <div class="contenedor clearfix">
+            <a href="index.html">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logotipo evento">
+                </div>
+            </a>
+            <div class="menu-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav class="navegacion-principal clearfix">
+                <a href="conferencia.html">Conferencias</a>
+                <a href="#">Calendario</a>
+                <a href="#">Invitados</a>
+                <a href="registro.html">Reservas</a>
+            </nav>
+        </div>
+    </div>
+
+    <section class="seccion contenedor">
+        <h2>Registro de Usuarios</h2>
+        <form action="index.html" id="registro" class="registro" method="POST">
+            <div id="datos-usuarios" class="registro caja clearfix">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Tu Nombre">
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Tu Nombre">
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="Tu Correo Electrónico">
+                </div>
+                <div id="error"></div>
+            </div>
+            <!--#datos-usuario-->
+            <div id="paquetes" class="paquetes">
+                <h3>Elige el número de entradas</h3>
+                <ul class="lista-precios clearfix">
+                    <li>
+                        <div class="tabla-precio">
+                            <h3>Pase por día (viernes)</h3>
+                            <p class="numero">$500</p>
+                            <ul>
+                                <li> Doughnuts Gratis</li>
+                                <li> Todas las Conferencias</li>
+                                <li> Todos los talleres</li>
+                            </ul>
+                            <div class="orden">
+                                <label for="pase_dia">Entradas deseadas:</label>
+                                <input type="number" id="pase_dia" min="0" size="3" placeholder="0">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tabla-precio">
+                            <h3>Todos los días</h3>
+                            <p class="numero">$1000</p>
+                            <ul>
+                                <li> Doughnuts Gratis</li>
+                                <li> Todas las Conferencias</li>
+                                <li> Todos los talleres</li>
+                            </ul>
+                            <div class="orden">
+                                <label for="pase_completo">Entradas deseadas:</label>
+                                <input type="number" id="pase_completo" min="0" size="3" placeholder="0">
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="tabla-precio">
+                            <h3>Pase por dos días (viernes y sábado)</h3>
+                            <p class="numero">$800</p>
+                            <ul>
+                                <li> Doughnuts Gratis</li>
+                                <li> Todas las Conferencias</li>
+                                <li> Todos los talleres</li>
+                            </ul>
+                            <div class="orden">
+                                <label for="pase_2dias">Entradas deseadas:</label>
+                                <input type="number" id="pase_2dias" min="0" size="3" placeholder="0">
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--#paquetes-->
+
+            <div id="eventos" class="eventos clearfix">
+                <h3>Elige tus talleres</h3>
+                <div class="caja">
+
+                    <div id="viernes" class="contenido-dia clearfix">
+                        <h4>viernes</h4>
+
+
+                        <div>
+                            <p>Seminario</p>
+
+                            <label>
+                                 <input type="checkbox" name="registro[]" id="10" value="10">
+                                <time>10:00</time> Ser un buen vecino                                                       <br>
+                                <span class="autor">Homero Simpson</span>
+                            </label>
+                        </div>
+
+                        <div>
+                            <p>Conferencias</p>
+
+                            <label>
+                                <input type="checkbox" name="registro[]" id="8" value="8">
+                                <time>10:00</time> Cocina de hamburgejas al vapor                                                       <br>
+                                <span class="autor">Seymour Skinner</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="9" value="9">
+                                <time>17:00</time> El empresario y la sensibilidad social                                                        <br>
+                                <span class="autor">Montgomery Burns</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="7" value="7">
+                                <time>14:00</time> La vida de un ganador                                                        <br>
+                                <span class="autor">William McDougal</span>
+                            </label>
+                        </div>
+
+                        <div>
+                            <p>Talleres</p>
+
+                            <label>
+                                <input type="checkbox" name="registro[]" id="4" value="4">
+                                <time>16:00</time> Cómo comer una naranja                                                        <br>
+                                <span class="autor">Juan Casimiro Topo</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="6" value="6">
+                                <time>20:00</time> Baile Funky y Defensa personal                                                       <br>
+                                <span class="autor">Moe Szyslak</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--.contenido-dia -->
+                    <div id="sabado" class="contenido-dia clearfix">
+                        <h4>sábado</h4>
+
+
+                        <div>
+                            <p>Seminario</p>
+
+                            <label>
+                                <input type="checkbox" name="registro[]" id="21" value="21">
+                                <time>17:00</time> Cuidado del medio ambiente                                                        <br>
+                                <span class="autor">Montgomery Burns</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="11" value="11">
+                                <time>19:00</time> Vínculos madre-hijo                                                      <br>
+                                <span class="autor">Seymour Skinner</span>
+                            </label>
+                        </div>
+
+                        <div>
+                            <p>Conferencias</p>
+
+                            <label>
+                                <input type="checkbox" name="registro[]" id="17" value="17">
+                                <time>10:00</time> Reconstruir la choza                                                        <br>
+                                <span class="autor">William McDougal</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="32" value="32">
+                                <time>11:00</time> Experiencias en gastronomía                                                        <br>
+                                <span class="autor">Moe Szyslak</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="18" value="18">
+                                <time>17:00</time> Eficiencia y productividad                                                        <br>
+                                <span class="autor">Homero Simpson</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="19" value="19">
+                                <time>19:00</time> Adiestramiento de perros                                                         <br>
+                                <span class="autor">Montgomery Burns</span>
+                            </label>
+                        </div>
+
+                        <div>
+                            <p>Talleres</p>
+
+                            <label>
+                                <input type="checkbox" name="registro[]" id="12" value="12">
+                                <time>12:00</time> La bola en la ingle                                                       <br>
+                                <span class="autor">Juan Casimiro Topo</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="13" value="13">
+                                <time>14:00</time> Lucha con lobos                                                     <br>
+                                <span class="autor">William McDougal</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="14" value="14">
+                                <time>17:00</time>  Recuperando a tu pareja                                                      <br>
+                                <span class="autor">Seymour Skinner</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="15" value="15">
+                                <time>19:00</time> El programa "Homer Simpson"                                                        <br>
+                                <span class="autor">Homero Simpson</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="16" value="16">
+                                <time>21:00</time> Técnicas de seducción                                                        <br>
+                                <span class="autor">Moe Szyslak</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--.contenido-dia -->
+                    <div id="domingo" class="contenido-dia clearfix">
+                        <h4>domingo</h4>
+
+
+                        <div>
+                            <p>Seminario</p>
+
+                            <label>
+                                <input type="checkbox" name="registro[]" id="30" value="30">
+                                <time>10:00</time> Francés en una mañana                                                        <br>
+                                <span class="autor">William McDougal</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="31" value="31">
+                                <time>16:00</time> Paternidad Responsable                                                        <br>
+                                <span class="autor">Homero Simpson</span>
+                            </label>
+                        </div>
+
+                        <div>
+                            <p>Talleres</p>
+
+                            <label>
+                                <input type="checkbox" name="registro[]" id="22" value="22">
+                                <time>10:00</time> Manejo de camiones                                                        <br>
+                                <span class="autor">Juan Casimiro Topo</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="23" value="23">
+                                <time>12:00</time> Dirige tu equipo de baseball                                                        <br>
+                                <span class="autor">Montgomery Burns</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="24" value="24">
+                                <time>14:00</time> Alimentación saludable                                                        <br>
+                                <span class="autor">Homero Simpson</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="25" value="25">
+                                <time>17:00</time> LLamadas en broma                                                        <br>
+                                <span class="autor">Moe Szyslak</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" name="registro[]" id="26" value="26">
+                                <time>19:00</time> Astronomía para aficionados                                                       <br>
+                                <span class="autor">Seymour Skinner</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--.contenido-dia -->
+                </div>
+                <!--.caja-->
+            </div>
+            <!--#eventos-->
+
+            <div id="resumen" class="resumen">
+                <h3>Pago y Extras</h3>
+                <div class="caja clearfix">
+                    <div class="extras">
+                        <div class="orden">
+                            <label for="camisa_evento">Remera del evento $250 <small>(Promoción 7% descuento) </small></label>
+                            <input type="number" id="camisa_evento" min="0" size="3" placeholder="0">
+                        </div>
+                        <div class="orden">
+                            <label for="stickers_evento">Paquete de 10 stickers $100 <small>(HTML5, CSS3, JavaScript, Chrome) </small></label>
+                            <input type="number" id="stickers_evento" min="0" size="3" placeholder="0">
+                        </div>
+                        <div class="orden">
+                            <label for="regalo">Selecciona un regalo</label> <br>
+                            <select id="regalo" required>
+                                <option value="">Selecciona un regalo</option>
+                                <option value="STI">Stickers</option>
+                                <option value="PUL">Pulseras</option>
+                                <option value="BIR">Birome</option>
+                            </select>
+                        </div>
+
+                        <input type="button" id="calcular" value="Calcular" class="button">
+                    </div>
+                    <!--extras-->
+                    <div class="total">
+                        <p>Resumen: </p>
+                        <div id="lista-productos">
+
+                        </div>
+                        <p>Total: </p>
+                        <div id="suma-total">
+
+                        </div>
+                        <input id="btnRegistro" type="submit" class="button" value="Pagar">
+                    </div>
+                    <!--Total-->
+                </div>
+                <!--caja-->
+            </div>
+            <!--resumen-->
+        </form>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="contenedor clearfix">
+            <div class="footer-informacion">
+                <h3>Sobre <span>SpringConf</span></h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum facilis nisi aut sapiente possimus reiciendis adipisci autem officia consectetur quidem? Molestiae reprehenderit quod dolore facilis praesentium illo enim totam eius.</p>
+            </div>
+            <div class="ultimos-tweets">
+                <h3>Ultimos <span>Tweets</span></h3>
+                <ul>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, perferendis cumque a voluptas eum voluptatem qui sunt autem dolor enim perspiciatis laboriosam</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, perferendis cumque a voluptas eum voluptatem qui sunt autem dolor enim perspiciatis laboriosam</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, perferendis cumque a voluptas eum voluptatem qui sunt autem dolor enim perspiciatis laboriosam</li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h3>Redes <span>Sociales</span></h3>
+                <nav class="redes-sociales">
+                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </nav>
+            </div>
+        </div>
+        <p class="copyright">Todos los derechos reservados SpringConf 2021 &copy</p>
+    </footer>
+
+
+    <script src="js/vendor/modernizr-3.8.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
+    </script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('set', 'transport', 'beacon');
+        ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
